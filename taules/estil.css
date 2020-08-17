@@ -1,0 +1,16 @@
+#titol{
+    background-color:rgb(62, 161, 92);
+    padding: 8px 15px;
+    color:white;
+    border-radius: 5px;
+}
+#sidebar{
+    background-color:dodgerblue;
+    position:absolute;
+    border-radius: 10px;
+    width:180px;
+    height:260px;
+    right:12px;
+    top:150px;
+    color:white;
+}
