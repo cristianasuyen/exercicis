@@ -4,6 +4,10 @@
     color:white;
     border-radius: 5px;
 }
+#menu lateral esquerre{
+    background-color:rgb(62,161,92);
+    position:absolute;
+}
 #sidebar{
     background-color:dodgerblue;
     position:absolute;
@@ -13,4 +17,5 @@
     right:12px;
     top:150px;
     color:white;
+    padding:2%
 }

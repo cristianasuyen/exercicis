@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    #fons{
+        width:400px;
+        height:400px;
+        position:absolute;
+        left:50%;
+        margin-left:-200px;
+        top:50%;
+        margin-top:-200px;
+        background-image: url(nicargua.jpeg);
+        background-size:cover;
+    }
+    #capa1{
+        width:188px;
+        height:188px;
+        background-color:violet;
+        border:6px solid magenta;
+        position:absolute;
+        left:50%;
+        z-index:10;
+        bottom:50%;
+
+    }
+    #capa1:hover{
+        left:75%;
+        transition:9s ease;
+        
+    }
+    #capa2{
+        width:188px;
+        height:188px;
+        background-color:blue;
+        border:6px solid aqua;
+        position:absolute;
+        right:50%;
+        z-index:10;
+        bottom:50%;
+    }
+    #capa2:hover{
+        right:75%;
+        transition:9s ease;
+    }
+    #capa3{
+        width:188px;
+        height:188px;
+        background-color:black;
+        border:6px solid white;
+        position:absolute;
+        right:50%;
+        z-index:10;
+        top:50%
+    }
+    #capa3:hover{
+        right:75%;
+        transition:9s ease;
+    }
+    #capa4{
+        width:188px;
+        height:188px;
+        background-color:blueviolet;
+        border:6px solid seashell;
+        position:absolute;
+        left:50%;
+        z-index:10;
+        top:50%
+    }
+    #capa4:hover{
+        left:75%;
+        transition:9s ease;
+    }
+    
+    </style>
+</head>
+<body>
+     <div id="capa1"></div>
+     <div id="capa2"></div>
+     <div id="capa3"></div>
+     <div id="capa4"></div>
+    <div id="fons"></div>
+
+</body>
+</html>
