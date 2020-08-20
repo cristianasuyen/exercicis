@@ -1,36 +1,82 @@
+@font-face{
+    font-family: titol;
+    src: url(MuseoCyrillic-700.otf);
+}
+@font-face{
+    font-family: text;
+    src: url(MuseoSans-300)
+}
 #container{
-    background-color:white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
     font-size:16px;
     top:0%;
-    position:absolute;
+    position:relative;
     
 
 }
 body{
     margin:0;
+    font-family: titol;
 }
 #textprincipal h1{
-    background-color:white;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size:46px;
+    
+    font-size:30px;
     margin-bottom:0;
     margin-left:5%
 }
 #textprincipal p{
-    background-color:white;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucid, Arial, sans-serif;
+
     font-size:26px;
     margin-bottom:5%;
     margin-left:5%;
     font-weight: normal;
+    font-family: text;
 }
 .primerafoto{
     width:100%;
     
 }
-@media screen and (max-width 1200px){
+#container2{
+    background-color:#00A881;
+    height:100%;
+    width:100%;
+    font-size:16px;
+    color:white;
+    margin-left:0%;
+  
+   
+}
+ul{
+    list-style-type:none;
+    height:200px;
+    background-color:#00A881;
+}
+li{
+    background-color:white;
+    width:350px;
+    height:40px;
+    border: 4px solid rgb(156,191,214);
+    color:rgb(18,18,168);
+    position:relative;
+    float:left;
+    margin:20px;
+    padding-top:30px;
+    text-align:center;
+}
+li:hover{
+    background-color:rgb(190,190,214);
+}
+h2{
+    
+    font-size:26px;
+    padding-right:6px;
+    display:inline;
+    margin:60px;
+    position:relative;
+}
+
+@media screen and (max-width: 1200px){
     .primerafoto{
-        display:none;
+
     }
 }
