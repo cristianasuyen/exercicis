@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script language="javascript">
+       function comprar(){
+
+          var prod=document.getElementById("select_productes").value;
+          var resultat=document.getElementById("resultat");
+          if(prod=="bicicleta"){
+              resultat.innerHTML="<img src='bicicleta.jpeg'>";
+          }
+          else{
+            if(prod=="patinet"){
+                resultat.innerHTML="<img src='patinete.png'>";
+            }
+                
+            else{
+                if(prod=="patins"){
+                    resultat.innerHTML="<img src='patines.jpeg'>";
+                }
+            }
+        }
+    }
+        
+   
+
+
+    
+    
+    
+    </script>
+    
+        
+  
+  </head>
+  <body>
+    <h1>PRODUCTES</h1>
+   <select id="select_productes" onchange="comprar()">
+    <option value="bicicleta">Bicicleta</option>
+    <option value="patinet">Patinet</option>
+    <option value="patins">Patins</option><br>
+  
+</select>
+<div id="resultat">
+
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+</body>
+</html>

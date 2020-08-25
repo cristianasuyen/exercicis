@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script language="javascript">
+       function triar(){
+
+          var plat=document.getElementById("select_primerplat").value;
+          var resultat=document.getElementById("resultat");
+          if(plat=="amanidacabra"){
+              resultat.innerHTML="<img src='amanida.jpeg'>";
+          }
+          else{
+            if(plat=="sopatomate"){
+                resultat.innerHTML="<img src='sopatomate.jpeg'>";
+            }
+                
+            else{
+                if(plat=="quichejamon"){
+                    resultat.innerHTML="<img src='quiche.jpeg'>";
+                }
+            }
+        }
+    }
+        
+    
+    function escull(){
+
+        var plat=document.getElementById("select_segonplat").value;
+        var resultat2=document.getElementById("resultat2");
+        if(plat=="macarrones"){
+            resultat.innerHTML="<img src='macarrones.jpeg'>";
+        }
+        else{
+        if(plat=="sepiaplancha"){
+            resultat.innerHTML="<img src='sepia.jpeg'>";
+        }
+            
+        else{
+            if(plat=="lasanya"){
+                resultat.innerHTML="<img src='lasanya.jpeg'>";
+            }
+        }
+        }
+        }
+        
+        function escoge(){
+
+        var plat=document.getElementById("select_postres").value;
+        var resultat3=document.getElementById("resultat3");
+        if(plat=="coulant"){
+            resultat.innerHTML="<img src='coulant.jpeg'>";
+        }
+        else{
+        if(plat=="pastis"){
+            resultat.innerHTML="<img src='pastel.jpeg'>";
+        }
+            
+        else{
+            if(plat=="fruita"){
+                resultat.innerHTML="<img src='fruta.jpeg'>";
+            }
+        }
+        }
+        }
+
+
+
+
+
+
+
+    
+    
+    
+    </script>
+    
+        
+  
+</head><link rel="stylesheet" type="text/css" href="restaurante.css">
+  <body>
+    <h1>PRIMEROS:</h1>
+   <select id="select_primerplat" onchange="triar()">
+    <option value="amanidacabra">Ensalada de queso de Cabra</option>
+    <option value="sopatomate">Sopa de tomate</option>
+    <option value="quichejamon">Quiche de jamon y queso</option><br>
+  
+</select>
+<div id="resultat">
+
+</div>
+
+<h1>SEGUNDOS:</h1>
+   <select id="select_segonplat" onchange="escull()">
+    <option value="macarrones">Macarrones a la boloñesa</option>
+    <option value="sepiaplancha">Sepia a la plancha con patatas</option>
+    <option value="lasanya">Lasaña de verduras</option><br>
+  
+</select>
+<div id="resultat2">
+
+</div>
+
+<h1>POSTRES:</h1>
+   <select id="select_postres" onchange="escoge()">
+    <option value="coulant">Coulant de chocolate con salsa de caramelo</option>
+    <option value="pastis">Pastel de queso con coulis de mango</option>
+    <option value="fruita">Fruta del tiempo</option><br>
+  
+</select>
+<div id="resultat3">
+
+</div>
+
+
+
+
+
+  
+    
+</body>
+</html>

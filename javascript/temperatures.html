@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script language="javascript">
+        function comprovar(){
+          var temp=document.getElementById("text_temperatura").value;
+          var resultat=document.getElementById("resultat");
+          if(temp<15){
+              resultat.innerHTML="<img src='ninot.jpeg'>";
+          }
+          else{
+              if(temp<25){
+                resultat.innerHTML="<img src='prado.jpeg'>";
+              }
+              else{
+                resultat.innerHTML="<img src='playa.jpeg'>";
+              }
+          }
+        }
+   
+
+
+    
+    
+    
+    </script>
+    <style type="text/css">
+    #resultat{
+        background-color:aqua;
+        width:2000px;
+        height:1000px;
+    }
+    
+    </style>
+        
+    <title></title>
+  </head>
+  <body>
+   
+   <label>Temp:</label>
+   <input type="text" id="text_temperatura"><br>
+   <input type="button" value="comprovar" onclick="comprovar()">
+
+   <div id="resultat">
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+</body>
+</html>
