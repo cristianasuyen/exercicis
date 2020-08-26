@@ -34,6 +34,7 @@
 
         var plat=document.getElementById("select_segonplat").value;
         var resultat2=document.getElementById("resultat2");
+
         if(plat=="macarrones"){
             resultat.innerHTML="<img src='macarrones.jpeg'>";
         }
@@ -85,37 +86,41 @@
   
 </head><link rel="stylesheet" type="text/css" href="restaurante.css">
   <body>
+      
     <h1>PRIMEROS:</h1>
-   <select id="select_primerplat" onchange="triar()">
+    <select id="select_primerplat" onchange="triar()">
+    <option value="selecciona">Escoge...</option>
     <option value="amanidacabra">Ensalada de queso de Cabra</option>
     <option value="sopatomate">Sopa de tomate</option>
-    <option value="quichejamon">Quiche de jamon y queso</option><br>
+    <option value="quichejamon">Quiche de jamon y queso</option>
   
-</select>
-<div id="resultat">
+    </select>
 
+<div id="resultat">
 </div>
 
 <h1>SEGUNDOS:</h1>
-   <select id="select_segonplat" onchange="escull()">
+    <select id="select_segonplat" onchange="escull()">
+    <option value="selecciona">Escoge...</option>
     <option value="macarrones">Macarrones a la boloñesa</option>
     <option value="sepiaplancha">Sepia a la plancha con patatas</option>
-    <option value="lasanya">Lasaña de verduras</option><br>
+    <option value="lasanya">Lasaña de verduras</option>
   
-</select>
+    </select>
 <div id="resultat2">
-
 </div>
 
-<h1>POSTRES:</h1>
-   <select id="select_postres" onchange="escoge()">
+ <h1>POSTRES:</h1>
+    <select id="select_postres" onchange="escoge()">
+    <option value="selecciona">Escoge...</option>
     <option value="coulant">Coulant de chocolate con salsa de caramelo</option>
     <option value="pastis">Pastel de queso con coulis de mango</option>
-    <option value="fruita">Fruta del tiempo</option><br>
-  
-</select>
-<div id="resultat3">
+    <option value="fruita">Fruta del tiempo</option>
 
+
+    </select>
+
+<div id="resultat3">
 </div>
 
 
