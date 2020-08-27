@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+    <style type="text/css">
+    .titol{
+    background-color:antiquewhite;
+    border-radius:16px;
+    text-align:center;
+    font-family: cursive;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </style>
+
+    <script language="javascript">
+     function triar(){
+    var primers=["amanida.jpeg","quiche.jpeg","sopatomate.jpeg"];
+    var select_primerplat=document.getElementById("select_primerplat").value;
+    var capa=document.getElementById("resultat");
+    capa.innerHTML="<img src="+primers[select_primerplat]+">"
+
+
+
+     }
+    function escull(){
+    var segons=["macarrones.jpeg","sepia.jpeg","lasanya.jpeg"];
+    var select_segonplat=document.getElementById("select_segonplat").value;
+    var capa=document.getElementById("resultat2");
+    capa.innerHTML="<img src="+segons[select_segonplat]+">"
+
+     } 
+    
+    function escoge(){
+    var postres=["coulant.jpeg","pastel.jpeg","fruta.jpeg"];
+    var select_postres=document.getElementById("select_postres").value;
+    var capa=document.getElementById("resultat3");
+    capa.innerHTML="<img src="+postres[select_postres]+">"
+    
+    }
+
+
+
+
+
+      
+    </script>
+
+
+
+  </head>
+  
+  <body>
+   
+<div id="capa1" class="titol">
+<h1>RESTAURANT CA LA CRIS</h1>
+</div>
+
+<h2>PRIMERS:</h2>
+    <select id="select_primerplat" onchange="triar()">
+    <option value=""></option>
+    <option value="0">Amanida de formatge de Cabra</option>
+    <option value="1">Sopa de tomàquet</option>
+    <option value="2">Quiche de pernil dolç i formatge</option>
+  
+    </select>
+
+<div id="resultat">
+</div>
+
+<h2>SEGONS:</h2>
+    <select id="select_segonplat" onchange="escull()">
+    <option value=""></option>
+    <option value="0">Macarrons a la Bolonyesa</option>
+    <option value="1">Sípia a la planxa amb patates</option>
+    <option value="2">Lasanya de verdures</option>
+  
+    </select>
+<div id="resultat2">
+</div>
+
+ <h2>POSTRES:</h2>
+    <select id="select_postres" onchange="escoge()">
+    <option value=""></option>
+    <option value="0">Coulant de xocolata amb salsa de caramel</option>
+    <option value="1">Pastís de formatge amb coulis de mango</option>
+    <option value="2">Fruita del temps</option>
+
+
+    </select>
+
+<div id="resultat3">
+</div>
+
+
+
+    
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+    <script language="javascript">
+    function triar(){
+    var plats=["amanida.jpeg","quiche.jpeg","sopatomate.jpeg","macarrones.jpeg"];
+    var plat=document.getElementById("plat").value;
+    var capa=document.getElementById("capafoto");
+
+    capa.innerHTML="<img src="+plats[plat]+">"
+
+
+
+    }
+
+
+
+    </script>
+    
+  </head>
+  <body>
+    
+    <select id="plat" onchange="triar()">
+    <option value=""></option>
+    <option value="0">Amanida de formatge de cabra</option>
+    <option value="1">Quiche de pernil i formatge</option>
+    <option value="2">Sopa de tomàquet</option>
+    <option value="3">Macarrons a la bolonyesa</option>
+
+    </select>
+      <div id="capafoto">
+
+      </div>
+      
+
+
+      
+      
+
+
+    
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+
+    <style type="text/css">
+    img{
+        width:20%;
+        height:20%;
+        border-radius:16px;
+    }   
+    .text{
+        background-color:lightpink;
+        font-family:cursive;
+        text-align:center;
+    }
+        
+    body{
+        background-image:url('helado.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height:100%;
+    }    
+    
+        
+        
+        
+        
+        </style>
+
+
+    <script language="javascript">
+    function triar(){
+    var gelats=[["cucufresa.png","tarfresa.jpeg","espfresa.jpeg"],["cucuvainilla.jpeg","tarvainilla.png","espvainilla.jpeg"],
+                ["cucuchoco.jpeg","tarchoco.jpeg","espchoco.jpeg"],["cuculimon.jpeg","tarlimon.jpeg","esplimon.jpeg"]]
+
+    var gust=document.getElementById("gust").value;
+    var tipus=document.getElementById("tipus").value;
+    var capa=document.getElementById("capafoto");
+    capa.innerHTML="<img src="+gelats[gust][tipus]+">"
+
+    }
+
+
+      
+      
+      
+      </script>
+
+  </head>
+  <body>
+    <div id="container">
+      <div id="text"class="text">
+        <h1>GELATERIA ICE MANIA</h1>
+      </div>
+        <div class="gust">
+        <h2>GUST</h2>
+        <select id="gust" onchange="triar()">
+                <option value=""></option>
+                <option value="0">Maduixa</option>
+                <option value="1">Vainilla</option>
+                <option value="2">Xocolata</option>
+                <option value="3">Llimona</option>
+            
+                </select>
+        </div>        
+        
+
+        <div class="tipus">
+        <h2>TIPUS</h2>
+        <select id="tipus" onchange="triar()">
+                <option value=""></option>
+                <option value="0">Cucurutxo</option>
+                <option value="1">Terrina</option>
+                <option value="2">Especial</option>        
+                </select>
+        </div>
+
+        <div id="capafoto">
+
+        </div>
+    </div>
+    
+  </body>
+</html>
