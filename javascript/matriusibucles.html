@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+  </head>
+  <body>
+    
+    
+    <script language="javascript">
+    function mostrar_fotos(){
+        var fotos=["verano.jpeg","primavera.jpeg","tardor.jpeg"]
+        for(i=0;i<fotos.length;i++){
+        var capa=document.getElementById("capa"+i)
+        capa.innerHTML="<img src='"+fotos[i]+"'>";
+        }
+
+    }
+
+
+
+
+
+    </script>
+    
+
+
+
+    <input type="button" value="imatges" onclick="mostrar_fotos()">
+    <div id="capa0">
+
+    </div>
+    <div id="capa1">
+
+    </div>
+    <div id="capa2">
+
+    </div>
+
+   
+  </body>
+
+
+</html>
