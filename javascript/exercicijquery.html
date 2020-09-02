@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script
+        src="http://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous">
+    </script>
+    
+    <style type="text/css">
+    img{
+        width:30%;
+        height:30%;
+        border-radius:15px;
+        margin:auto;
+        display: block;
+       
+        
+       
+    }
+    h1{
+        font-family:cursive;
+        color:brown;
+        text-align:center;
+        background-color:ivory;
+        border-radius:40px;
+    }
+    
+    #container{
+        background-color:ivory;
+        
+    }
+   
+    p{
+        color:black;
+        text-align:center;
+        background-color:whitesmoke;
+        text-align:center;
+        font-family:'Courier New', Courier, monospace;
+        border-radius:16px;
+        
+    }
+    
+
+    </style>
+
+</head>
+
+<body>
+<div id="container">
+<input type="button" value="primavera" class="estacio" id="primavera">
+
+<input type="button" value="estiu" class="estacio" id="estiu">
+
+<input type="button" value="tardor" class="estacio" id="tardor">
+
+<input type="button" value="hivern" class="estacio" id="hivern">
+
+
+<h1>Collars per a gossos personalitzats</h1>
+<img src="collares.jpeg">
+<p>Morbi maximus urna in sem condimentum suscipit. 
+    Nulla id diam accumsan, suscipit ipsum vel, dignissim ex. 
+    Praesent cursus, sem sed auctor lacinia, elit diam efficitur urna, ut pulvinar dolor arcu et odio.
+    Nullam in urna suscipit, sodales purus et, maximus est. 
+    Aenean mattis commodo diam. Ut metus felis, auctor at mauris quis, finibus tempus lorem. 
+    Nunc et arcu lacus. Pellentesque maximus auctor metus id aliquam. 
+    Aenean sed mauris magna. Fusce pharetra diam pharetra sagittis sollicitudin. 
+    Aliquam non porta nisl. Nunc hendrerit turpis quis nisi sollicitudin sodales.
+    Praesent vel gravida est. Donec et diam lacinia turpis varius aliquam. 
+    Fusce eget vehicula nunc. 
+    Mauris sodales, felis eu vulputate commodo, mauris libero semper tellus, ut ultrices eros diam ac mi.</p><br>
+    <br>
+<h1>14.99€</h1>
+
+
+
+<script language="javascript">
+    $(function(){
+        $('#primavera').click(function(){
+            $('#container').css('background-image','url(prim.jpeg)')
+
+
+        });
+        $('#estiu').click(function(){
+            $('#container').css('background-image','url(verano.jpeg)')
+
+        });
+        $('#tardor').click(function(){
+            $('#container').css('background-image','url(tardor.jpeg)')
+
+        });
+        $('#hivern').click(function(){
+            $('#container').css('background-image','url(invierno.jpeg)')
+
+        });
+        
+    });
+
+
+
+</script>
+
+
+
+</div>
+</body>
+</html>

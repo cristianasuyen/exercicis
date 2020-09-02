@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script
+        src="http://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous">
+    </script>
+
+
+</head>
+
+<body>
+<img src="tardor.jpeg" id="imatge">
+
+<script language="javascript">
+$(function(){
+    $('#boto1').click(function(){
+        $('#imatge').attr('src','tardor.jpeg')
+
+    });
+    $('#boto2').click(function(){
+        $('#imatge').attr('src','invierno.jpeg')
+
+    });
+
+
+
+});
+
+</script>
+<input type="button" value="foto1" id="boto1">
+<input type="button" value="foto2" id="boto2">
+
+</body>
+</html>

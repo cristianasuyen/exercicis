@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script
+        src="http://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous">
+    </script>
+
+
+</head>
+
+<body>
+<form>
+<h1>Formulari</h1>
+Nom:
+<input type="text" id="text_nom" class="quadre" size="50"><br>
+<br>
+E-mail:
+<input type="text" id="text_email" class="quadre" size="60"><br>
+<br>
+Telèfon:
+<input type="text" id="text_telefon" class="quadre" size="10"><br>
+<br>
+Comentaris:<br>
+<textarea cols="100" rows="8" id="text_comentari" class="quadre">
+</textarea><br>
+<input type="button" value="enviar" id="boto_enviar">
+
+
+</form>
+
+<script language="javascript">
+    $(function(){
+        $('#boto_enviar').click(function(){
+            if($('#text_nom').val()==""){
+             //window.alert("camp obligatori");
+             $('#text_nom').css('background-color','red')
+
+            }
+            if($('#text_email').val()==""){
+             $('#text_email').css('background-color','red')
+            }
+            if($('#text_telefon').val()==""){
+             $('#text_telefon').css('background-color','red')
+            }
+
+
+
+        });
+            $('.quadre').focus(function(){
+             $(this).css('background-color','white')
+
+
+            });
+    });
+
+
+
+</script>
+
+</body>
+</html>
