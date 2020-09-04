@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script
+        src="http://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous">
+    </script>
+
+
+</head>
+
+<body>
+
+<h1 id="titol">Títol exemple</h1>
+<img src="prim.jpeg" id="foto">
+
+
+<input type="button" value="boto" id="boto_api">
+
+<script language="javascript">
+    $(function(){
+        $('#boto_api').click(function(){
+            $.get('http://jsonplaceholder.typicode.com/photos/1',function(data,status){
+                $('#titol').html(data.title);
+                $('#foto').attr('src',data.url)
+            
+            });
+        
+        
+        });
+
+
+    });
+    
+
+
+</script>
+
+
+</body>
+</html>

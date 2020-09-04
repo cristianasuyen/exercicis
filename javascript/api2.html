@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script
+        src="http://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous">
+    </script>
+<style>
+    .targeta{
+        background-color:aquamarine;
+        border:1px solid green;
+        width:300px;
+        height:200px;
+        float:left;
+        position:relative;
+    }
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<input type="button" value="mostrar" id="boto_mostrar">
+<div id="capa">
+    
+
+</div>
+
+<script language="javascript">
+    $(function(){
+        $('#boto_mostrar').click(function(){
+            $.get('http://jsonplaceholder.typicode.com/users',function(data,status){
+                var i=0
+                for(i=0;i<data.length;i++){
+                    var usuari=data[i]
+                    $('#capa').append('<div class="targeta"><p>'+usuari.name+'</p><p>'+usuari.email+'</p><p>'+usuari.phone+'</p></div>')
+                }
+
+            });
+
+        });
+        
+    });
+    
+
+
+</script>
+
+
+</body>
+</html>
