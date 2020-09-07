@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script
+        src="http://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous">
+    </script>
+<style>
+    
+
+</style>
+
+</head>
+
+<body>
+
+
+<input type="button" value="boton" id="boton_comprobar">
+
+<div id="capa">
+    
+
+</div>
+
+<script language="javascript">
+
+   $(function(){
+       $('#boton_comprobar').click(function(){
+           $.get('https://cors-anywhere.herokuapp.com/http://server.boka2.com/ws/bicis.json',function(data,status){
+                for(i=0;i<data.stations.length;i++){
+                    var user=data.stations[i]
+                   $('#capa').append(user.station_id+"<br>")
+                   $('#capa').append(user.num_bikes_available+"<br>")
+                   $('#capa').append(user.stations+"<br>")
+                   $('#capa').append('<hr>')
+                }
+           });      
+           
+                
+
+       });
+
+   });
+
+
+</script>
+
+</body>
+</html>

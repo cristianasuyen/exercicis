@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script
+        src="http://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous">
+    </script>
+<style>
+    
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<input type="button" value="mostrar" id="boto_mostrar">
+<div id="capa">
+    
+
+</div>
+
+<script language="javascript">
+
+   $(function(){
+       $('#boto_mostrar').click(function(){
+           $.get('https://cors-anywhere.herokuapp.com/http://server.boka2.com/ws/seleccions.json',function(data,status){
+                for(i=0;i<data.Seleccions.length;i++){
+                    var Seleccio=data.Seleccions[i];   
+                   $('#capa').append(Seleccio.title+"<br>")
+                   $('#capa').append(Seleccio.nombrePlaces+"<br>")
+                   $('#capa').append(Seleccio.ens+"<br>")
+                   $('#capa').append('<hr>')
+                } 
+           });
+                
+
+       });
+
+   });
+
+
+</script>
+
+</body>
+</html>
